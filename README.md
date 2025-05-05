@@ -23,7 +23,7 @@ This task has two parts: the implementation of the priority queue class `Priorit
 - `private siftUp(index: number): void`: Maintains the min-heap property by bubbling the item (based on specified index) up the heap after insertion (see `enqueue()` method above)
 - `private siftDown(index: number): void`: Maintains the min-heap property by bubbling the item (based on specified index) down the heap after removal (see `dequeue()` method above)
 - `private swap(index1: number, index2: number): void`: Swaps two items in the heap based on their indices
-- `private compare(a: QueueItem<T>, b: QueueItem<T>): 1 | -1 | 0`. Compares items (based on their indices) in heap based on their `priority`. It should return:
+- `private compare(index1: number, index2: number): 0 | 1 | -1`. Compares items (based on their indices) in heap based on their `priority`. It should return:
   - `0` when values are equal
   - `-1` when value of first item is lower than value of second one
   - `1` when value of first item is greater than value of second one
